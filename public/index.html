@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+
+    <div class="container">
+
+        <div class="title-section">
+            <h1>⏱ Stopwatch</h1>
+            <p>Measure every moment.</p>
+        </div>
+
+        <div class="status">
+            <span class="dot"></span>
+            Ready to Start
+        </div>
+
+        <div id="display">00:00:00:00</div>
+
+        <div class="buttons">
+            <button onclick="startStop()">▶ Start</button>
+            <button onclick="pauseStop()">⏸ Pause</button>
+            <button onclick="resetStop()">↻ Reset</button>
+            <button onclick="lapTime()">⚑ Lap</button>
+        </div>
+
+        <div class="lap-section">
+            <h2>⏱ Lap Times</h2>
+            <ul id="laps"></ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Developed by Tejaswini | Stopwatch Web Application</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
